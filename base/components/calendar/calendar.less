@@ -1,0 +1,68 @@
+.calendar {
+  color: #333333;
+
+  &-top {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    height         : 94rpx;
+    font-size      : 30rpx;
+
+    &-cancel {
+      margin-left: 34rpx;
+      color      : #999999;
+    }
+
+    &-box {
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+
+      &-leftArrow {
+        width        : 18rpx;
+        height       : 18rpx;
+        border-left  : #999999 solid 2rpx;
+        border-bottom: #999999 solid 2rpx;
+        transform    : rotate(45deg);
+        margin-right : 40rpx;
+      }
+
+      &-rightArrow {
+        width        : 18rpx;
+        height       : 18rpx;
+        border-right : #999999 solid 2rpx;
+        border-bottom: #999999 solid 2rpx;
+        transform    : rotate(-45deg);
+        margin-left  : 40rpx;
+      }
+    }
+
+    &-confirm {
+      margin-right: 34rpx;
+      color       : #FF4E43;
+
+    }
+  }
+  &-week{
+    height: 60rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-i{
+      flex: 1;
+      text-align: center;
+    }
+  }
+  &-days{
+    min-height: 360rpx;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-days-i{
+    width: calc(100% / 7);
+    min-height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

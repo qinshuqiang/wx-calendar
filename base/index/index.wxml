@@ -1,0 +1,6 @@
+<view>
+  <calendar generic:slotView="slotView">
+
+  </calendar>
+</view>
+  

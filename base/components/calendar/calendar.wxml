@@ -1,0 +1,28 @@
+<view class="calendar">
+	<view class="calendar-top">
+		<view class="calendar-top-cancel"> 取消
+		</view>
+		<view class="calendar-top-box">
+			<view class="calendar-top-box-leftArrow" bindtap="lastMonthFn">
+			</view>
+			<view class="calendar-top-box-date">
+				{{year}}-{{month}}
+			</view>
+			<view class="calendar-top-box-rightArrow"  bindtap="nextMonthFn">
+			</view>
+		</view>
+		<view class="calendar-top-confirm"> 确认
+		</view>
+	</view>
+	<view class="calendar-week">
+		<view class="calendar-week-i" wx:for="{{week}}" wx:key="index">
+			{{item}}
+		</view>
+	</view>
+	<view class="calendar-days">
+		<view class="calendar-days-i" wx:for="{{days}}" wx:key="index">
+      <slotView item="{{item}}" />
+		</view>
+	</view>
+
+</view>
